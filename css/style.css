@@ -165,13 +165,16 @@ p{
 
 .descripcion{
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 10px;
+  
+   
 }
 .modal{
-    height: 45%;
-    width: 15%;
+    height: 40%;
+    width: 20%;
     border: 1px solid darkgray;
     border-radius: 20px;
     display: flex;
@@ -181,27 +184,32 @@ p{
     background-color: white;
 }
 h3{
-    font-size: 40px;
-    color: rgba(241, 241, 7, 0.801) ;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(7, 54, 241, 0.501) ;
 }
 .modal img{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     margin-top: 15px;
 
 }
 .modal p{
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     margin-top: 15px;
+    overflow:auto;
 
+}
+::-webkit-scrollbar{
+    display: none;
 }
 .precio{
     margin-top: 15px;
-    font-size: 25px;
+    font-size: 20px;
     color: red;
 }
-.css-button-gradient--4 {
+.css-button-gradient--4,.css-button-gradient--4s,.css-button-gradient--5 {
     min-width: 130px;
     height: 40px;
     color: #fff;
@@ -219,9 +227,56 @@ h3{
     font-size: 20px;
     margin-top: 10px;
 }
-  .css-button-gradient--4:hover {
+.css-button-gradient--5{
+    background-image: linear-gradient(315deg, #070606 0%, #f5343e 75%);
+}
+  .css-button-gradient--4:hover,.css-button-gradient--4s:hover,.css-button-gradient--5:hover {
     background-position: right center;
   }
-  .css-button-gradient--4:active {
+  .css-button-gradient--4:active,.css-button-gradient--4s:active,.css-button-gradient--5:active {
     top: 2px;
   }
+
+  .modal2{
+    height: 100vh;
+    width: 100%;
+    border: solid 1px blue;
+    background-color: rgba(0, 0, 0, 0.845);
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.ventana{
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    position: relative;
+    
+}
+.cerrar{
+    border: solid 1px black;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+}
+.contenido{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.contenido .modal{
+    width: 90%;
+    height: 100%;
+    
+}
