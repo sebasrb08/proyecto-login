@@ -1,7 +1,8 @@
-// import {rotar} from './carrusel.js' 
+import {rotar} from './carrusel.js' 
 
-// rotar()
+rotar()
 let elementos=''
+
 const descripcion=document.querySelector('.descripcion')
 const url="https://fakestoreapi.com/products"
 async function traer(){
@@ -53,14 +54,15 @@ addEventListener('click',(event)=>{
 
     
     if(event.target.className=="css-button-gradient--4s"){
+    let name=document.querySelector('.titul').innerText
+        
+        localStorage.setItem('datos',JSON.stringify(name))
         location.href='../html/index3.html'
     }
     })
     
 })
-let name=document.querySelector('.titul').innerText
-export function titulos(){
-    console.log(name)
-}
+
+
     
 

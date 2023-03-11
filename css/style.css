@@ -57,16 +57,18 @@ html{
    display: flex;
    align-items: center;
    justify-content: center;
-   
+   position: relative;
+
 }
 .ojito input{
     height: 100%;
     width: 80%;
     font-size: 20px;
+    
 }
 .ojito span{
     position: absolute;
-    right: 770px;
+    right: 50px;
     color: rgb(15, 11, 245);
    
 }
@@ -102,9 +104,12 @@ html{
     align-items: center;
     gap: 10px;
 }
+.foot span{
+    color: white;
+}
 a{
     text-decoration: none;
-    color:rgb(15, 11, 245);
+    color:rgb(246, 246, 250);
 }
 
 body{

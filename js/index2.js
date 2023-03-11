@@ -1,4 +1,4 @@
-import {titulos} from './index.js'
 
-document.getElementById('conten').innerText=`${titulos()}`
-console.log(titulos())
+let datos=JSON.parse (localStorage.getItem('datos'))
+
+conten.innerHTML=`Muchas Gracias por comprar ${datos}`
